@@ -1,0 +1,15 @@
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body {
+    background-image: url(assets/schack.jpg)
+}
+
+h1, h2 {
+    text-align: center;
+    background-color: #837d7d;
+    /*width: fit-content;*/
+    width: 80%
+}
