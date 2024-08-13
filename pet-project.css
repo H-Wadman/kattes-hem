@@ -4,12 +4,15 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
   margin-top: 5px;
-  width: 50%;
 }
 
 #banner {
@@ -21,9 +24,35 @@ h2 {
 p {
   text-align: center;
   /* height: 50px; */
-  padding: 15px;
 }
 
 #content {
   background-color: cornflowerblue;
+}
+
+.portrait-row {
+  display: flex;
+  padding: 1%;
+  gap: 1%;
+}
+
+.portrait {
+  display: flex;
+  flex-direction: column;
+  width: 19%;
+  font-size: 1.5em;
+}
+
+.portrait h3,
+h4 {
+  margin-top: -10px;
+}
+
+.portrait img {
+  border-radius: 50%;
+}
+
+.portrait p {
+  max-height: 15em;
+  overflow: auto;
 }
