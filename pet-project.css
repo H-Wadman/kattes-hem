@@ -28,8 +28,13 @@ p {
 
 #content {
   background-color: cornflowerblue;
+  margin: 200px;
+  margin-top: 0px;
+  margin-left: 197px;
 }
 
+/********************/
+/* Portrait section */
 .portrait-row {
   display: flex;
   padding: 1%;
@@ -55,4 +60,16 @@ h4 {
 .portrait p {
   max-height: 15em;
   overflow: auto;
+  text-align: left;
+  margin-left: 1em;
+
+  margin-top: 0.5em;
+  margin-bottom: 0em;
 }
+
+.portrait li {
+  margin-left: 2em;
+}
+
+/* ---------------- */
+/********************/
