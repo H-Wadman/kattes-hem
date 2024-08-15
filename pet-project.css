@@ -15,10 +15,23 @@ h6 {
   margin-top: 5px;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 #banner {
-  background-color: #837d7d;
-  border-radius: 45% 0%;
+  font-size: 3em;
+
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
   margin-top: 2%;
+  margin-bottom: 0px;
+
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(#cf2c2c, #198d2852);
 }
 
 p {
@@ -27,10 +40,11 @@ p {
 }
 
 #content {
-  background-color: cornflowerblue;
+  background-image: linear-gradient(#198d28, #548dcf);
   margin: 200px;
   margin-top: 0px;
   margin-left: 197px;
+  border-radius: 15%;
 }
 
 /********************/
@@ -47,7 +61,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 23%;
-  font-size: 1.5em;
+  font-size: 2.3em;
 }
 
 .portrait h3,
@@ -60,17 +74,36 @@ h4 {
 }
 
 .portrait p {
-  max-height: 15em;
   overflow: auto;
   text-align: left;
   margin-left: 1em;
 
   margin-top: 0.5em;
   margin-bottom: 0em;
+  font-size: 1em;
 }
 
 .portrait li {
   margin-left: 2em;
+  font-size: 1em;
+  margin-bottom: 0em;
+}
+
+/* ---------------- */
+/********************/
+
+/********************/
+/*  Google section  */
+.matemasie-regular {
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.new-amsterdam-regular {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* ---------------- */

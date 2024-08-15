@@ -36,6 +36,27 @@
       "title": "The funniest guy I've ever seen",
       "games": ["Dead by Daylight", "Glurp"],
       "lore": "Found in the darkest corner of the Lund comedy festival"
+    },
+    {
+      "ign": "Balder",
+      "name": "Leo",
+      "icon": "balder-cropped.png",
+      "title": "The mysterious",
+      "games": [
+        "League of Legends (with controller)",
+        "Eternal Return",
+        "Starcraft 2",
+        "Chess"
+      ],
+      "lore": "???"
+    },
+    {
+      "ign": "Murrwin",
+      "name": "Mange",
+      "icon": "mange-cropped.webp",
+      "title": "The athletic",
+      "games": ["League of Legends", "Eternal Return", "Starcraft 2"],
+      "lore": "Gunnesbo"
     }
   ]
 }

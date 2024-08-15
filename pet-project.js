@@ -7,17 +7,8 @@ const loadUsers = async () => {
   return response.json();
 };
 
-const insertPresentations = async () => {
-  let jsonObject = await loadUsers();
-  let users = jsonObject.users;
-  let pres = document.getElementById("presentation");
-  console.log(users);
-  for (const user of users) {
-    let gameList = "";
-    for (const game of user.games) {
-      gameList += `<li>${game}</li>\n`;
-    }
-    pres.innerHTML += `<div class="portrait">
+const getPortraitDiv = (user, gameList) => {
+  return `<div class="portrait">
                         <img
                             src="assets/profilbilder/${user.icon}"
                         />
@@ -31,6 +22,28 @@ const insertPresentations = async () => {
                         <p><em>Lore:</em></p>
                         <p style="margin-left: 2em">${user.lore}</p>
                     </div>`;
+};
+
+const insertPresentations = async () => {
+  let jsonObject = await loadUsers();
+  let users = jsonObject.users;
+  let pres = document.getElementById("presentation");
+  let presRow = undefined;
+  console.log(users);
+  let counter = 0;
+
+  for (const user of users) {
+    if (counter % 4 === 0) {
+      presRow = document.createElement("div");
+      presRow.classList.add("portrait-row");
+      pres.appendChild(presRow);
+    }
+    ++counter;
+    let gameList = "";
+    for (const game of user.games) {
+      gameList += `<li>${game}</li>\n`;
+    }
+    presRow.innerHTML += getPortraitDiv(user, gameList);
   }
 };
 
