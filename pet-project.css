@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Probably do * { padding: 0; margin: 0; } and fix everything as you want it afterward */
+
 body {
   background-image: url(assets/schack.jpg);
   font-family: Verdana;
@@ -12,11 +19,12 @@ h6 {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 h1 {
   font-size: 3em;
+  line-height: 1;
 }
 
 #banner {
@@ -26,8 +34,9 @@ h1 {
   border-top-right-radius: 0%;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
-  margin-top: 2%;
-  margin-bottom: 0px;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  padding: 0;
 
   color: transparent;
   background-clip: text;
@@ -41,27 +50,31 @@ p {
 
 #content {
   background-image: linear-gradient(#198d28, #548dcf);
-  margin: 200px;
+  margin: 10%;
   margin-top: 0px;
-  margin-left: 197px;
+  margin-bottom: 0px;
   border-radius: 15%;
+  /*text-align: center;*/
 }
 
 /********************/
 /* Portrait section */
 .portrait-row {
   display: flex;
-  padding: 1%;
-  gap: 1%;
-  margin: 0 auto;
+  gap: 3%;
+  margin: 5%;
   justify-content: center;
 }
 
 .portrait {
   display: flex;
   flex-direction: column;
-  width: 23%;
+  width: 25%;
   font-size: 2.3em;
+}
+
+.portrait img {
+  width: 100%;
 }
 
 .portrait h3,
@@ -70,6 +83,10 @@ h4 {
 }
 
 .portrait img {
+  border-radius: 50%;
+}
+
+.portrait a img {
   border-radius: 50%;
 }
 

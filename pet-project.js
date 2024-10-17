@@ -1,13 +1,6 @@
-const loadUsers = async () => {
-  let response = await fetch("katte-users.json");
+import {loadUsers} from './utils.js';
 
-  if (!response.ok) {
-    throw new Error("Network response when loading user returned an error");
-  }
-  return response.json();
-};
-
-const getPortraitDiv = (user, gameList) => {
+const getPortraitDiv_old = (user, gameList) => {
   return `<div class="portrait">
                         <img
                             src="assets/profilbilder/${user.icon}"
@@ -24,27 +17,50 @@ const getPortraitDiv = (user, gameList) => {
                     </div>`;
 };
 
+const getPortraitDiv = (user) => {
+  return `<div class="portrait">
+                        <a href="/personer/profile.html?ign=${
+      user.ign.toLowerCase()}">
+                          <img
+                              src="assets/profilbilder/${user.icon}"
+                          />
+                        </a>
+                        <h2>${user.ign}</h2>
+                        <h4>${user.title}</h4>
+                    </div>`;
+};
+
 const insertPresentations = async () => {
   let jsonObject = await loadUsers();
   let users = jsonObject.users;
-  let pres = document.getElementById("presentation");
-  let presRow = undefined;
+  let pres = document.getElementById('presentation');
+  if (pres === null) {
+    console.error('Could not find presentation element');
+    return
+  }
   console.log(users);
-  let counter = 0;
 
+  let presRow = undefined;
+  let counter = 0;
   for (const user of users) {
-    if (counter % 4 === 0) {
-      presRow = document.createElement("div");
-      presRow.classList.add("portrait-row");
+    if (counter % 3 === 0) {
+      presRow = document.createElement('div');
+      presRow.classList.add('portrait-row');
       pres.appendChild(presRow);
     }
     ++counter;
-    let gameList = "";
+    let gameList = '';
     for (const game of user.games) {
       gameList += `<li>${game}</li>\n`;
     }
-    presRow.innerHTML += getPortraitDiv(user, gameList);
+
+    if (presRow === undefined) {
+      console.error('Could not find presentation row element');
+      return
+    }
+
+    presRow.innerHTML += getPortraitDiv(user);
   }
 };
 
-document.addEventListener("DOMContentLoaded", insertPresentations);
+document.addEventListener('DOMContentLoaded', insertPresentations);
