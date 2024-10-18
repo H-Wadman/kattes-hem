@@ -10,7 +10,6 @@ const selectUser = async (ign) => {
 };
 
 const onLoadProfile = async () => {
-  console.log('Hej allesammans');
   const queryParams = new URLSearchParams(window.location.search);
   const user = await selectUser(queryParams.get('ign'));
 

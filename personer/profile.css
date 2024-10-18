@@ -1,5 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url(/header.css);
 
+#content {
+    background-color: tomato;
+    padding-bottom: 1px;
+}
