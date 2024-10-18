@@ -1,60 +1,28 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-/* Probably do * { padding: 0; margin: 0; } and fix everything as you want it afterward */
-
-body {
-  background-image: url(assets/schack.jpg);
-  font-family: Verdana;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0px;
-}
+@import url(header.css);
 
 h1 {
   font-size: 3em;
   line-height: 1;
+  padding-bottom: 5%;
+  margin-bottom: -5%;
 }
 
 #banner {
   font-size: 3em;
 
-  border-top-left-radius: 0%;
-  border-top-right-radius: 0%;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+  border-radius: 0% 0% 20% 20%;
   margin-top: 0%;
   margin-bottom: 5%;
-  padding: 0;
 
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(#cf2c2c, #198d2852);
 }
 
-p {
-  text-align: center;
-  /* height: 50px; */
-}
-
 #content {
   background-image: linear-gradient(#198d28, #548dcf);
-  margin: 10%;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 10%;
   border-radius: 15%;
-  /*text-align: center;*/
 }
 
 /********************/
@@ -62,7 +30,7 @@ p {
 .portrait-row {
   display: flex;
   gap: 3%;
-  margin: 5%;
+  margin-top: 5%;
   justify-content: center;
 }
 
@@ -74,7 +42,8 @@ p {
 }
 
 .portrait img {
-  width: 100%;
+  width: 100%; /* Ser till så att alla bilder fyller upp hela portrait 
+  (som är 25% av raden) istället för att bero på bildens ursprungsmått*/
 }
 
 .portrait h3,
@@ -83,27 +52,7 @@ h4 {
 }
 
 .portrait img {
-  border-radius: 50%;
-}
-
-.portrait a img {
-  border-radius: 50%;
-}
-
-.portrait p {
-  overflow: auto;
-  text-align: left;
-  margin-left: 1em;
-
-  margin-top: 0.5em;
-  margin-bottom: 0em;
-  font-size: 1em;
-}
-
-.portrait li {
-  margin-left: 2em;
-  font-size: 1em;
-  margin-bottom: 0em;
+  border-radius: 40%; /* Testa andra värden */
 }
 
 /* ---------------- */
