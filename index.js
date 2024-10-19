@@ -22,7 +22,8 @@ const getPortraitDiv = (user) => {
                         <a href="/personer/profile.html?ign=${
       user.ign.toLowerCase()}">
                           <img
-                              src="assets/profilbilder/${user.icon}"
+                              src="assets/profilbilder/${user.icon.src}"
+                              alt="${user.icon.alt}"
                           />
                         </a>
                         <h2>${user.ign}</h2>

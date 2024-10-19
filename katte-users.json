@@ -3,7 +3,10 @@
     {
       "ign": "Mitza",
       "name": "Nathalie",
-      "icon": "mitza-cropped.jpg",
+      "icon": {
+        "src": "mitza-cropped.jpg",
+        "alt": "Image of girl with green hair"
+      },
       "title": "The artist",
       "games": ["League of Legends", "Eternal Return", "Starcraft 2", "Chess"],
       "lore": "Met William the wanderer in the Warframe galaxy many parsecs from here"
@@ -11,7 +14,10 @@
     {
       "ign": "mippen",
       "name": "Hannes",
-      "icon": "mippen-cropped-square.png",
+      "icon": {
+        "src": "mippen-cropped-square.png",
+        "alt": "Image of Hannes as farmer"
+      },
       "title": "The nerd",
       "games": ["League of Legends", "Eternal Return", "Starcraft 2", "Chess"],
       "lore": "Met Mange the grand Gunnesbo wizard during horn practice"
@@ -19,7 +25,10 @@
     {
       "ign": "Wilzom",
       "name": "William",
-      "icon": "william-cropped.png",
+      "icon": {
+        "src": "william-cropped.png",
+        "alt": "Image of William as a super saiyan rosé"
+      },
       "title": "The wanderer",
       "games": [
         "League of Legends",
@@ -32,7 +41,7 @@
     {
       "ign": "Trisse",
       "name": "Tristan",
-      "icon": "trisse-cropped.png",
+      "icon": { "src": "trisse-cropped.png", "alt": "Drug dealer simulator 2" },
       "title": "The funniest guy I've ever seen",
       "games": ["Dead by Daylight", "Glurp"],
       "lore": "Found in the darkest corner of the Lund comedy festival"
@@ -40,7 +49,10 @@
     {
       "ign": "Balder",
       "name": "Leo",
-      "icon": "balder-cropped.png",
+      "icon": {
+        "src": "balder-cropped.png",
+        "alt": "Image of an older individual with an unconventional moustache"
+      },
       "title": "The mysterious",
       "games": [
         "League of Legends (with controller)",
@@ -53,7 +65,10 @@
     {
       "ign": "Murrwin",
       "name": "Mange",
-      "icon": "mange-cropped.webp",
+      "icon": {
+        "src": "mange-cropped.webp",
+        "alt": "A crude picture made in paint of a muscular man saying 'good morning' in Swedish"
+      },
       "title": "The athletic",
       "games": ["League of Legends", "Eternal Return", "Starcraft 2"],
       "lore": "Gunnesbo"
