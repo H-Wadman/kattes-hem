@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Probably do * { padding: 0; margin: 0; } and fix everything as you want it afterward */
+  
+  body {
+    background-image: url(assets/schack.jpg);
+    font-family: Verdana;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
