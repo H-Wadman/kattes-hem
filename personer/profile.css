@@ -1,6 +1,23 @@
 @import url(/header.css);
 
+h1 {
+  font-size: 10em;
+}
+
+#ign {
+  color: rgb(55, 53, 53);
+}
+
+p {
+  text-align: center;
+}
+
 #content {
-    background-color: tomato;
-    padding-bottom: 1px;
+  background-color: tomato;
+  padding-bottom: 1px;
+}
+
+#experiment {
+  text-align: right;
+  color: blue;
 }

@@ -1,0 +1,1 @@
+Fix so that we can undo overflow/height hack in header.css by showing checkerboard even when scrolling past/pre page

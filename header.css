@@ -1,17 +1,55 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Probably do * { padding: 0; margin: 0; } and fix everything as you want it afterward */
-  
-  body {
-    background-image: url(assets/schack.jpg);
-    font-family: Verdana;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  padding: 0;
+  margin: 0;
+}
+
+/* Probably do * { padding: 0; margin: 0; } and fix everything as you want it afterward */
+
+html {
+  background-image: url(assets/schack.jpg);
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: Verdana;
+  overflow: auto;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  border: 10px solid;
+  border-color: red;
+}
+
+img[alt] {
+  border: 0px;
+}
+
+/********************/
+/*  Google section  */
+.matemasie-regular {
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.new-amsterdam-regular {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ---------------- */
+/********************/

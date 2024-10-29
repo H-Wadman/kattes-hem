@@ -21,7 +21,7 @@ h1 {
 
 #content {
   background-image: linear-gradient(#198d28, #548dcf);
-  margin: 0 10%;
+  margin: 1% 10%;
   border-radius: 15%;
 }
 
@@ -53,23 +53,6 @@ h4 {
 
 .portrait img {
   border-radius: 40%; /* Testa andra värden */
-}
-
-/* ---------------- */
-/********************/
-
-/********************/
-/*  Google section  */
-.matemasie-regular {
-  font-family: "Matemasie", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.new-amsterdam-regular {
-  font-family: "New Amsterdam", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 /* ---------------- */
