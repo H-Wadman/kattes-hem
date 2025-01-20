@@ -46,8 +46,16 @@ h1 {
   (som är 25% av raden) istället för att bero på bildens ursprungsmått*/
 }
 
-.portrait h3,
-h4 {
+.portrait h2 {
+    font-size: 6vw;
+}
+
+.portrait h4 {
+  font-size: 2.3vw;
+  margin-top: -1vw;
+}
+
+.portrait h3 {
   margin-top: -10px;
 }
 
