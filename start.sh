@@ -1,1 +1,1 @@
-npx http-server . -o -p 9999
+npx http-server ./public -o -p 9999
