@@ -56,7 +56,6 @@ body {
   text-transform: uppercase;
   position: relative;
   z-index: 2;
-  text-shadow: 1px 0px rgba(0, 0, 0, 0.4);
   color: #686f77;
   letter-spacing: .2em;
   text-decoration: none;
