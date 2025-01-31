@@ -7,3 +7,14 @@ export const loadUsers = async () => {
   }
   return response.json();
 };
+
+export const addMenuBar = () => {
+  const menu = `<ul id="menu-bar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a>Emotes</a></li>
+            <li><a>Wiki</a></li>
+            <li><a>Bingo</a></li>
+        </ul>`;
+
+  document.body.innerHTML = menu + document.body.innerHTML;
+}

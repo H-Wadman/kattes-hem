@@ -1,4 +1,4 @@
-import {loadUsers} from './utils.js';
+import {addMenuBar, loadUsers} from './utils.js';
 
 const getPortraitDiv_old = (user, gameList) => {
   return `<div class="portrait">
@@ -64,4 +64,6 @@ const insertPresentations = async () => {
   }
 };
 
+
+addMenuBar();
 document.addEventListener('DOMContentLoaded', insertPresentations);

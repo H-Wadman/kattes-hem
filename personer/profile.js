@@ -1,4 +1,4 @@
-import {loadUsers} from '../utils.js';
+import {addMenuBar, loadUsers} from '../utils.js';
 
 const selectUser = async (ign) => {
   const users = await loadUsers();
@@ -23,4 +23,5 @@ const onLoadProfile = async () => {
 };
 
 
+addMenuBar()
 document.addEventListener('DOMContentLoaded', onLoadProfile);
