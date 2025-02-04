@@ -72,6 +72,16 @@
       "title": "The athletic",
       "games": ["League of Legends", "Eternal Return", "Starcraft 2"],
       "lore": "Gunnesbo"
+    },
+    {
+      "ign": "AqeqDodgE",
+      "name": "Oskar",
+      "icon": {
+        "src": "dagner-cropped.png",
+        "alt": "Image of young man with dirty blond hair"
+      },
+      "title": "The funny",
+      "games": ["League of Legends", "Eternal Return", "Starcraft 2", "Chess"]
     }
   ]
 }
