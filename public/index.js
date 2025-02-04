@@ -39,7 +39,6 @@ const insertPresentations = async () => {
     console.error('Could not find presentation element');
     return
   }
-  console.log(users);
 
   let presRow = undefined;
   let counter = 0;
