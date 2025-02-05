@@ -1,3 +1,5 @@
+export const API_URL = 'https://mistakenly-diverse-parrot.ngrok-free.app'
+
 export const loadUsers = async () => {
   let response = await fetch('/katte-users.json');
 
@@ -11,7 +13,7 @@ export const loadUsers = async () => {
 export const addMenuBar = () => {
   const menu = `<ul id="menu-bar">
             <li><a href="/index.html">Home</a></li>
-            <li><a>Emotes</a></li>
+            <li><a href="/emotes/emotes.html">Emotes</a></li>
             <li><a>Wiki</a></li>
             <li><a>Bingo</a></li>
         </ul>`;
