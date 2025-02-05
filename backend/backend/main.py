@@ -1,10 +1,15 @@
-from fastapi import FastAPI  # type: ignore
+from fastapi import FastAPI, HTTPException  # type: ignore
+from fastapi.middleware.cors import CORSMiddleware  # type: ignore
+
 import mysql.connector  # type: ignore
 from mysql.connector import errorcode
+
 import sys
 
 USER: str = ""
 PWD: str = ""
+
+origins = ["*"]
 
 
 def load_env():
@@ -21,6 +26,13 @@ def load_env():
 
 load_env()
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_methods=["GET"],
+    allow_headers=["*"],
+)
 
 try:
     cnx = mysql.connector.connect(
@@ -54,5 +66,5 @@ async def read_item(item_id: int):
     cur.execute(f"SELECT name, src FROM emotes WHERE id = {item_id}")
     row = cur.fetchone()
     if row is None:
-        return {}
+        raise HTTPException(status_code=404, detail="Item not found")
     return {"name": row[0], "src": row[1]}
